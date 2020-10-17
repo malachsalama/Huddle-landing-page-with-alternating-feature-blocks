@@ -186,6 +186,7 @@ footer {
 
 footer p {
   font-size: 15px;
+  margin: 1rem 0;
   text-align: center;
 }
 
@@ -243,4 +244,133 @@ footer p {
 
 .footer-logo {
   width: 40%;
+}
+
+.attribution a {
+  color: #ff52bf;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 996px) {
+  .header .nav {
+    padding-top: 2rem;
+  }
+  .header .nav .logo {
+    height: 30px;
+  }
+  .header .nav .primary-btn {
+    font-size: 1rem;
+  }
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .showcase {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .showcase-content {
+    width: 45%;
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .showcase-content h1 {
+    font-size: 1.8rem;
+    width: 70%;
+  }
+  .showcase-content .secondary-btn {
+    font-size: 1.1rem;
+    margin-left: 2rem;
+  }
+  .showcase img {
+    width: 55%;
+  }
+  .main {
+    margin: 7rem 0;
+  }
+  .main .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0 7rem;
+  }
+  .main .card-image {
+    max-width: 400px;
+  }
+  .main .card-content {
+    text-align: left;
+  }
+  .main .card:nth-child(odd) .card-image {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .main .card:nth-child(even) .card-content {
+    margin-left: 10rem;
+  }
+  .main .card:nth-child(odd) .card-content {
+    margin-right: 10rem;
+  }
+  .banner {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    left: 50%;
+    max-width: 50%;
+  }
+  .banner .secondary-btn {
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    padding: 1.5rem 5rem;
+  }
+  footer {
+    margin-top: 15rem;
+    padding: 10rem 0 7rem 0;
+    position: relative;
+  }
+  .footer-logo {
+    width: 20%;
+  }
+  .footer-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
+  }
+  .footer-content ul:nth-child(2) {
+    margin-top: 0;
+  }
+  .copyright {
+    position: absolute;
+    right: 3rem;
+    font-size: 0.8rem;
+  }
+  .attribution {
+    position: absolute;
+    bottom: 1rem;
+    color: #fff;
+    font-size: 0.9rem;
+    left: 50%;
+    width: 90%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    text-align: center;
+  }
+  .attribution span {
+    display: inline-block;
+  }
+  .attribution a {
+    color: #ff52bf;
+    text-decoration: none;
+  }
 }
